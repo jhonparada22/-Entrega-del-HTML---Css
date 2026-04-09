@@ -1,0 +1,94 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+<style>
+    div{
+        border: 1px solid black;
+        display: block; /*comportamiento del tag*/
+    }
+    label{
+        display: block;
+    }
+
+    input{
+        display: block;
+        align-content: center;
+        width: 40%;
+        margin: 10px auto;
+    }
+    /*seccion de selector de clase --->repiten */
+    .contenedor_general{
+        background: linear-gradient(to bottom, #ff0400, #3e3a3a);
+    }
+    /*seccion de selector ID */
+    .titulo_texto{
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .contenedor_hijo{
+        position: relative;
+        background: linear-gradient(to bottom, #e0d5d5, #ffffff);
+        width: 80%;
+        margin: 0 auto;
+        bottom: 3%;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        vertical-align: middle; 
+    }
+    #contenedor_texto{
+        color:rgb(255, 255, 255);
+        font-size: 30px;
+        text-shadow: 3px 4px 5px rgb(108, 173, 253);
+    }
+    #imagen_perfil {
+        position: relative;
+        height: 250px;
+        width: 250px;
+        margin:5 auto;
+        text-align: center;
+        align-content: center;
+        border: 4px solid #ff0000
+    }
+    #imagen_perfil video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    } 
+
+    </style>
+</head>
+<body>
+    <div Class="contenedor_general">
+        <div class="contenedor_hijo">
+                    <h2 id="contenedor_texto" class="titulo_texto">BIENVENIDO</h2>
+            <div id="imagen_perfil">
+                <video width="100%" autoplay loop muted>
+                <source src="video/perfil.mp4" type="video/mp4">
+                   </video>
+                </div>
+            <h2 id="contenedor_texto" class="titulo_texto">PAPITA</h2>
+        </div>
+        <div class="contenedor_hijo">
+            <div>
+            <div class="titulo_texto">
+                <h2 class="titulo_texto">INGRESAR</h2>
+            <a href="inicio.html">
+            <button type="button">Iniciar Sesion</button>
+            <br><br>
+            </a>
+            <a href="registro.html">
+            <button type="button">Registrarse</button>
+             </a> 
+        </div>
+        </div>
+
+    </div>
+    <br><br><br><br><br><br><br><br>
+</div>          
+</body>
+</html>
